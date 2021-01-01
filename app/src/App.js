@@ -25,10 +25,11 @@ function useFetch(url, defaultResponse) {
       getDataApi(url);
     }, [url]);
 
+    return data;
 }
 
 
-export default function App(data) {
+export default function App() {
 
   const randomId = Math.floor((Math.random() * 10) + 1);
   const apiEndpoint = `https://regres.in/api/users/${randomId}`;
